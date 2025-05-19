@@ -31,6 +31,12 @@
       flex-wrap: wrap;
       width: 100%;
     }
+    .container{
+      display: none;
+    }
+    .menu-section{
+      display: none;
+    }
   }
 
   @media (max-width: 600px) {
@@ -315,21 +321,15 @@ body {
 
 .child1,
 .child3 {
-  max-height: 2000px;
+  max-height: 1000px;
   overflow-y: scroll;
   padding: 9px; 
-  /* border: 1px solid #ccc; */
     width: 90%;
 }
 
 .child2 {
-  /* flex: 3;
-  padding: 15px;
-  max-height: 400px;
-  overflow-y: auto;
-  border: 1px solid #ccc; */
     width: 99%;
-  min-height: 100vh; /* 👈 ye height ab flexible hai */
+  max-height: 200vh; /* 👈 ye height ab flexible hai */
   overflow-y: auto;
   background-color: white;
 }
@@ -346,15 +346,7 @@ body {
 
 
 }
- .line {
-    position: absolute;
-    width: 3px;
-    height:370px;
-    background-color: rgb(163, 162, 162);
-    right:20%;
-   /* bottom:50%; */
-  margin-top: 40px;
-  }
+
   .child3 li:hover{
   border-left: 5px solid #007acc;
  background-color:  #9dc7e3;
@@ -367,6 +359,9 @@ body {
 }
 .container{
   margin-right: 10px;
+  border-left: 2px solid grey;
+  height: 400px;
+  
 }
 
 /* child2 */
